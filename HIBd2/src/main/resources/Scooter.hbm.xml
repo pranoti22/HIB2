@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 8 Apr, 2021 12:41:53 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <joined-subclass name="Scooter" extends="Vechical" table="SCOOTER" lazy="false">
+        <key>
+            <column name="COST" />
+        </key>
+        <property name="mileage" type="java.lang.String">
+            <column name="MILEAGE" />
+        </property>
+        <property name="maxSpeed" type="int">
+            <column name="MAXSPEED" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>
